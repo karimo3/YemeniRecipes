@@ -1,1 +1,12 @@
-{{hero}}
+
+
+<h2>My Recipess</h2>
+<ul class="recipes">
+    <li *ngFor="let recipe of recipes" 
+    (click)="onSelect(recipe)" 
+    [class.selected]="recipe === selectedRecipe">
+    <span class="badge">{{recipe.id}}</span> {{recipe.name}}
+  </li>
+</ul>
+
+<app-recipe-detail [recipe]="selectedRecipe"></app-recipe-detail>
