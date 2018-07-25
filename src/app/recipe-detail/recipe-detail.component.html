@@ -1,9 +1,9 @@
 
 <div *ngIf="recipe">
   <h2>{{ recipe.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{recipe.id}}</div>
+  <div><span>ID: </span>{{recipe.id}}</div>
   <div>
-    <label>name:
+    <label>Name:
       <input [(ngModel)]="recipe.name" placeholder="name">
     </label>
   </div>
